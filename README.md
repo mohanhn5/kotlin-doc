@@ -1,1 +1,1 @@
-# kotlin-doc
+This is a technical documentation page of the programming language which is now widely being used for Android development i.e., Kotlin. It contains a navigation bar which takes to the respective section of the content.
