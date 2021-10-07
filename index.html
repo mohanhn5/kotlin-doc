@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<title>Kotlin Documentation</title>
+<body>
+    <header class="main-heading">Kotlin Documentation</header>
+    <nav id="navbar">
+        <header>Contents</header>
+            <ul>
+                <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+                <li><a href="#Hello_World" class="nav-link">Hello World</a></li>
+                <li><a href="#Variables" class="nav-link">Variables</a></li>
+                <li><a href="#Datatypes" class="nav-link">Datatypes</a></li>
+                <li><a href="#Input/Output" class="nav-link">Input/Output</a></li>
+                <li><a href="#if..else_expression" class="nav-link">if..else expression</a></li>
+                <li><a href="#when_construct" class="nav-link">when construct</a></li>
+                <li><a href="#Functions" class="nav-link">Functions</a></li>
+                <li><a href="#Recursion" class="nav-link">Recursion</a></li>
+                <li><a href="#Reference" class="nav-link">Reference</a></li>
+            </ul>
+    </nav>
+    <main id="main-doc">
+        <header id="heading">Kotlin Documentation</header>
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>Kotlin is a relatively new programming language developed by JetBrains for modern multiplatform applications. Nowadays, Kotlin is widely used for Android development instead of Java. 
+                It is because Kotlin is safe, concise, and fun to read and write.</p>
+                <h3>About Kotlin Programming</h3>
+                <ul>
+                    <li>Open Source - The Kotlin compiler, Intellij IDEA plugin, and build tools are all open source.</li>
+                    <li>Interoperable - Kotlin is 100 percent interoperable with Java. This means all your current Java/Android code works seamlessly with Kotlin.</li>
+                    <li>Concise - Compared to Java, Kotlin code are much more concise. Also, Kotlin code is much more expressive (easier to understand and write).</li>
+                    <li>Tool-friendly - Kotlin is developed by JetBrains, the company renowned for creating development tools. You can choose any Java IDE to write Koltin code.</li>
+                </ul>
+                <h3>Why Learn Kotlin?</h3>
+                <ul>
+                    <li>Kotlin is 100 percent interoperable with Java. Hence your Java/Android code works with Kotlin.</li>
+                    <li>Kotlin allows you to cut off the lines of code by approximately 40% (compared to Java).</li>
+                    <li>Learning Kotlin is easy. It is particularly easy if you already know Java.</li>
+                    <li>Kotlin is tool-friendly. You can use any Java IDE or command line to run Kotlin.</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Hello_World">
+            <header>Hello World</header>
+            <article>
+                <p>A "Hello, World!" is a simple program that outputs <i>Hello, World!</i> on the screen. 
+                Since it's a very simple program, it's often used to introduce a new programming language.</p> 
+                <p>Let's explore how "Hello, World!" program works in Kotlin.</p>
+                <code>fun main(args : Array<String>) {<br>
+                    &emsp; println("Hello, World!")<br>
+                }</code>
+            </article>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <article>
+                <p>As you know, a variable is a location in memory (storage area) to hold data.</p>
+                <p>To indicate the storage area, each variable should be given a unique name (identifier).
+                    To declare a variable in Kotlin, either <i>var</i> or <i>val</i> keyword is used.</p>
+                <p>Here is an example:</p>
+                <code> var language = "French"<br>
+                    val score = 95</code>
+                <h3>Difference Between var and val</h3>
+                <ul>
+                    <li><strong>val</strong>  (Immutable reference) - The variable declared using <i>val</i> keyword cannot be changed once the value is assigned. It is similar to final variable in Java.</li>
+                    <li><strong>var</strong> (Mutable reference) - The variable declared using <i>var</i> keyword can be changed later in the program. It corresponds to regular Java variable.</li>
+                </ul>
+            </article>    
+        </section>
+        <section class="main-section" id="Datatypes">
+            <header>Datatypes</header>
+            <article>
+                <p>Kotlin is a statically typed language like Java. That is, the type of a variable is known during the compile time.</p>
+                <h3>The built-in types in Kotlin can be categorized as:</h3>
+                <ul>
+                    <li><strong>Numbers</strong></li>
+                    <p>Numbers in Kotlin are similar to Java. The 6 built-in types representing numbers are Byte, Short, Int, Long, Float, Double.</p>
+                    <li><strong>Characters</strong></li>
+                    <p>To represent a character in Kotlin, <i>Char</i> types are used. Unlike Java, <i>Char</i> types cannot be treated as numbers.</p>
+                    <li><strong>Booleans</strong></li>
+                    <p>The <i>Boolean</i> data type has two possible values, either <i>true</i> or <i>false</i>. Booleans are used in decision making statements.</p>
+                    <li><strong>Arrays</strong></li>
+                    <p>An array is a container that holds data (values) of one single type. In Kotlin, arrays are represented by the <i>Array</i> class.</p>    
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Input/Output">
+            <header>Input/Output</header>
+            <article>
+                <h3>Koltin Output</h3>
+                <p>You can use <i>println()</i> and <i>print()</i> functions to send output to the standard output (screen).</p>
+                <p>Let's take an example:</p>
+                <code> fun main(args : Array<String>) {<br>
+                    &emsp; println("Kotlin is interesting.")<br>
+                }</code>
+                <h3>Kotlin Input</h3>
+                <p>To read a line of string in Kotlin, you can use <i>readline()</i> function.</p>
+                <p>Let's take an example:</p>
+                <code>fun main(args: Array<String>) {<br>
+                &emsp;print("Enter text: ")<br>
+                &emsp;val stringInput = readLine()!!<br>
+                &emsp;println("You entered: $stringInput")<br>
+                }</code>
+            </article>
+        </section>
+        <section class="main-section" id="if..else_expression">
+            <header>if..else expression</header>
+            <article>
+                <p>The syntax of if...else is:</p>
+                <code> if (testExpression) {<br>
+                &emsp;// codes to run if testExpression is true<br>
+                }<br>
+                else {<br>
+                &emsp;// codes to run if testExpression is false<br>
+                }</code>
+                <p><i>if</i> executes a certain section of code if the <i>testExpression</i> is evaluated to <i>true</i>. It can have optional <i>else</i> clause. 
+                    Codes inside <i>else</i> clause are executed if the <i>testExpression</i> is false.</p>
+            </article>
+        </section>
+        <section class="main-section" id="when_construct">
+            <header>when construct</header>
+            <article>
+                <p>The <i>when</i> construct in Kotlin can be thought of as a replacement for Java switch Statement. It evaluates a section of code among many alternatives.</p>
+                <p>Example: Simple when Expression</p>
+                <code>fun main(args: Array<String>) {<br>
+                    &emsp;val a = 12<br>
+                    &emsp;val b = 5<br>
+                    &emsp;println("Enter operator either +, -, * or /")<br>
+                    &emsp;val operator = readLine()<br>
+                    &emsp;val result = when (operator) {<br>
+                    &emsp;&emsp;"+" -> a + b<br>
+                    &emsp;&emsp;"-" -> a - b<br>
+                    &emsp;&emsp;"*" -> a * b<br>
+                    &emsp;&emsp;"/" -> a / b<br>
+                    &emsp;&emsp;else -> "$operator operator is invalid operator."<br>
+                    &emsp;}<br>
+                    &emsp;println("Result = $result")<br>
+                }</code>
+            </article>
+        </section>
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <article>
+                <p>Depending on whether a function is defined by the user, or available in standard library, there are two types of functions:</p>
+                <ul>
+                    <li>Kotlin Standard Library Function</li>
+                    <p>The standard library functions are built-in functions in Kotlin that are readily available for use. For example,</p>
+                    <ul>
+                        <li><i>print()</i> is a library function that prints message to the standard output stream (monitor).</li>
+                        <li><i>sqrt()</i> returns square root of a number (Double value)</li><br>
+                    </ul>
+                    <li>User-defined functions</li>
+                    <p>You can create functions by yourself, such functions are called user-defined functions.</p>
+                </ul>
+            </article>
+        </section>
+    </section>
+    <section class="main-section" id="Recursion">
+        <header>Recursion</header>
+        <article>
+            <p>A function that calls itself is known as recursive function. And, this technique is known as recursion. </p>
+            <p>A physical world example would be to place two parallel mirrors facing each other. 
+                Any object in between them would be reflected recursively.</p>
+            <p>Syntax for resursive function : </p>
+            <code>fun main(args: Array<String>) {<br>
+                &emsp;... .. ...<br>
+                &emsp;recurse()<br>
+                &emsp;... .. ...<br>
+                }<br>
+                fun recurse() {<br>
+                &emsp;... .. ...<br>
+                &emsp;recurse()<br>
+                &emsp;... .. ...<br>
+            }</code>
+        </article>
+    </section>
+    <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+            <p>All these contents are taken from programiz.com website.</p>
+            <p>Visit <a href="https://www.programiz.com/kotlin-programming" target="_blank">programiz.com</a> for more details.</p>
+         </article>
+    </section>   
+    </main>
+</body>
+</html>
