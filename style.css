@@ -3,6 +3,7 @@ body {
     font-family: 'Open Sans', Arial, sans-serif;
     line-height: 1.5;
     font-size: large;
+    background-color: white;
 }
 header {
     text-align: center;
